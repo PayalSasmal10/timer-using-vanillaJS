@@ -1,0 +1,11 @@
+
+.outerDiv {
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.childDiv {
+    display: inline-block;
+
+}
