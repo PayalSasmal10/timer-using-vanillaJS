@@ -9,11 +9,11 @@ function startFunction(){
     timerInterval = setInterval(() => {
         elapsedTime = Date.now() - startTimer;
         let minutes = Math.floor(elapsedTime / 60000);
-        let seconds = Math.floor(elapsedTime % 60000) / 1000;
+        let seconds = Math.floor((elapsedTime % 60000) / 1000);
         let miliseconds = elapsedTime % 1000;
         document.getElementById("showTimer").innerHTML = `${minutes}:${seconds}:${miliseconds}`;
 
-    }, 10);
+    }, 100);
 }
 
 function stopFunction() {
